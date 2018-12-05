@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Calendario</title>
+    <script src="assets/node_modules/vue/dist/vue.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="assets/Vue/index.js" type="module"></script>
 
@@ -21,11 +23,13 @@
     />
   </head>
   <body>
+    <div id="mainContent"><main-content></main-content></div>
     <div class="app">
-      {{ teste }}
       <div class="container">
         <div class="row center">
-          <HelloWorld></HelloWorld>
+          <!-- <HelloWorld></HelloWorld> -->
+          <Pagination dados="XXX"></Pagination>
+
           <a class="btn btn-success">I'm button from Bootstrap</a>
           <a class="waves-effect waves-light btn"
             >I'm button from Materialize</a
@@ -37,5 +41,4 @@
   <script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
   <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="assets/node_modules/materialize-css/dist/js/materialize.min.js"></script>
-  <script src="assets/node_modules/vue-resource/dist/vue-resource.min.js"></script>
 </html>

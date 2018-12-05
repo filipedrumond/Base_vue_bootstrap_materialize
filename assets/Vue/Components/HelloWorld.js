@@ -1,9 +1,6 @@
-import subhelloworld from "./SubComponents/SubHelloWorld.js";
+import SubHelloWorld from "./SubComponents/SubHelloWorld.js";
 export default {
   name: "HelloWorld",
-  components: {
-    subhelloworld
-  },
   props: ["dados"],
   data: function() {
     return {
@@ -11,10 +8,13 @@ export default {
     };
   },
   created() {},
+  components: {
+    SubHelloWorld
+  },
   template: `
   <div>
       <h1>Hello World from HelloWorld.js</h1>
-      <subhelloworld></subhelloworld>
+      <SubHelloWorld></SubHelloWorld>
   </div>
   `
 };
