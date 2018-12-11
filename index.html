@@ -5,40 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Calendario</title>
     <script src="assets/node_modules/vue/dist/vue.min.js"></script>
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="assets/Vue/index.js" type="module"></script>
-
+    <script type="module" src="assets/Vue/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/jqueryui/jquery-ui.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/jqueryui/jquery-ui.theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/jqueryui/jquery-ui.structure.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
     <link
       rel="stylesheet"
       href="assets/node_modules/materialize-css/dist/css/materialize.min.css"
     />
-    <script
-      src="assets/node_modules/popper.js/dist/popper.min.js"
-      type="module"
-    ></script>
     <link
       rel="stylesheet"
       href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="assets/custom/custom.css" />
   </head>
   <body>
     <div id="mainContent"><main-content></main-content></div>
     <div class="app">
       <div class="container">
         <div class="row center">
-          <!-- <HelloWorld></HelloWorld> -->
-          <Pagination dados="XXX"></Pagination>
-
           <a class="btn btn-success">I'm button from Bootstrap</a>
           <a class="waves-effect waves-light btn"
             >I'm button from Materialize</a
           >
+          <!-- <Pagination></Pagination> -->
+          <!-- <Sorting></Sorting> -->
+          <Filtering></Filtering>
+          <HelloWorld></HelloWorld>
         </div>
       </div>
     </div>
   </body>
-  <script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="assets/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>

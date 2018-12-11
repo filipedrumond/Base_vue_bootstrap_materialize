@@ -7,7 +7,20 @@ export default {
       dadosJSON: []
     };
   },
-  created() {},
+  created() {
+    console.log("here");
+    var url = "https://jsonplaceholder.typicode.com/photos";
+    var data = {
+      username: "usuario_novo",
+      password: "123"
+    };
+    this.$session.set("username", "usuario_novo");
+    this.$session.set("password", "123");
+    this.$http.get(url, data).then(function(response) {
+      console.log(response.body);
+      this.dados = response.body;
+    });
+  },
   components: {
     SubHelloWorld
   },
