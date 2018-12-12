@@ -81,10 +81,19 @@ var Pagination = Vue.component("Pagination", {
       });
     }
   },
+  watch: {
+    type_search: function() {
+      console.log(this.min_max_range);
+      this.load_range(
+        this.min_max_range[0].albumId,
+        this.min_max_range[1].albumId
+      );
+    }
+  },
   computed: {
     filteredDados: function() {
       var result = [];
-      if (this.type_search == "id" || this.type_search == "album_id") {
+      if (this.type_search == "id" || this.type_search == "albumId") {
         result = this.dados.filter(post => {
           return this.search_number(post, this.type_search, this.range_search);
         });
